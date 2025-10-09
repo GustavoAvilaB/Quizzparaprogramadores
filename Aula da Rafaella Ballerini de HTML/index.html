@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Um quiz interativo para programadores">
+    <meta name="keywords" content="quiz,programação,código,desafio">
+    <meta name="author" content="Rafaela Ballerini">
+    <title>Quiz para programadores</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+    section > .details-content {
+        min-width: 400px;   
+        max-width: 800px;
+
+    }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Quiz interativo para programadores</h1>
+        <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>  <p>Para me conhecer melhor, visite também a página <a href="sobremim.html" target="_self" rel="next">Sobre mim</a>!</p>
+    </header>
+    <main>
+        <!--A rafaella é mó linda, slk-->
+        <!--Introdução-->
+        <section id="introducao">
+            <h2>Sobre esse quiz</h2>
+            <p><strong>Este quiz</strong> foi desenvolvido para testar seus conhecimento em programação, como
+                <em>linguagens de programação</em>, conceitos básicos e mais</p>
+            <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, texto e perguntas de data.
+                <br> Desafie-se com esse quiz!</p>
+            <p>Você poderá encontra alguns acrônimos como <abbr title="Hypertext Markup Languege">HTML</abbr> e <abbr
+                    title="Cascading Style Sheets">CSS</abbr>, que são comumente usados em questões relacionadas ao
+                desenvolvimento web</p>
+        </section>
+        <!--Pergunta 1: Múltipla escolha-->
+        <section>
+            <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web?</h2>
+            <form id="quiz-form">
+                <input type="radio" value="HTML" id="p1a" class="perguntas1" name="pergunta1">
+                <label for="p1a">HTML</label>
+                <input type="radio" value="CSS" id="p1b" class="perguntas1" name="pergunta1">
+                <label for="p1b">Ruby</label>
+                
+
+                <input type="radio" value="JavaScript" id="p1c" class="perguntas1" name="pergunta1">
+                <label for="p1c">JavaScript</label>
+
+                <input type="radio" value="Python" id="p1d" class="perguntas1" name="pergunta1">
+                <label for="p1d">Python</label>
+
+
+            </form>
+        </section>
+
+        <!--Pergunta 2: Texto-->
+        <section>
+            <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o _______</h2>
+            <form>
+                <input type="text" name="pergunta2" id="p2" placeholder="Escreva sua resposta aqui">
+            </form>
+        </section>
+
+        <!--Pergunta 3: Senha-->
+        <section>
+            <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+            <form>
+                <input type="password" name="pergunta3" id="p3" placeholder="Digite sua senha">
+            </form>
+        </section>
+        <!--Pergunta 4: Data-->
+        <section>
+            <h2>Pergunta 4: Em que ano o HTML lançou sua primeira versão?</h2>
+            <form>
+                <input type="date" name="pergunta4" id="p4">
+            </form>
+        </section>
+        <!--Pergunta 5: Seleção Múltipla-->
+        <section>
+            <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+            <form id="quiz-form">
+                <input type="checkbox" value="Javascript" class="perguntas" id="p5a" name="pergunta5">
+                <label for="p5a">Javascript</label>
+                <input type="checkbox" value="Ruby" id="p5b" class="perguntas" name="pergunta5">
+                <label for="p5b">Ruby</label>
+                <input type="checkbox" value="HTML" id="p5c" class="perguntas" name="pergunta5">
+                <label for="p5c">HTML</label>
+                <input type="checkbox" value="C#" id="p5d" class="perguntas" name="pergunta5">
+                <label for="p5d">C#</label>
+            </form>
+        </section>
+        <!--Pergunta 6: upload de arquivo-->
+        <section>
+            <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+            <form>
+                <input type="file" id="p6" name="pergunta6" accept=".html">
+            </form>
+        </section>
+        <!--Pergunta 7: menu suspenso-->
+        <section>
+            <h2>Pergunta 7: Selecione o atributo do input que define o seu tipo</h2>
+            <form>
+                <select name="pergunta7" id="p7">
+                    <option value="id">id</option>
+                    <option value="type">type</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+
+            </form>
+        </section>
+        <!--Pergunta 8: imagem-->
+        <section>
+            <h2>Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
+            <!--usando uma imagem alocada numa sub-pasta da pasta principal do código, é o mais recomendado-->
+            <figure><img src="imagens/free-html5-40-1175193.webp" alt="Logotipo do HTML5"> <br>
+                <figcaption>Figura 1: Logotipo de uma linguagem de programação</figcaption>
+            </figure>
+            <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta...">
+
+            <!--Outras alternativas de como colocar uma imagem no site-->
+
+            <!--usando uma imagem alocada na mesma pasta que o arquivo fonte do site "index.html", não é recomendado-->
+            <!--<img src="pexels-sabrina-gelbart-65954-249798.jpg"id="imagem"; alt="Imagem generica de programação">-->
+
+            <!--usando uma imagem por URL alocada diretamente da internet, não é o mais recomendado-->
+            <!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/240px-JavaScript-logo.png" alt="Logotipo do JavaScript">-->
+
+            <!-- <img src="https://avatars.githubusercontent.com/u/54322854?v=4" alt="Minha musa" id="imagem">-->
+
+        </section>
+        <!--Tabela de pontuação-->
+        <section>
+            <h2>Tabela de pontuação</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>0-2</td>
+                    <td>Não desista! mas tu é burro hein guri</td>
+                </tr>
+                <tr>
+                    <td>3-4</td>
+                    <td>você ainda precisa melhorar. Que tal aprender mais sobre programação</td>
+                </tr>
+                <tr>
+                    <td>5-7</td>
+                    <td>Seu conhecimento em programação está satisfatório</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Perfeito, Você está muito bem informado sobre programação</td>
+                </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Boa sorte na próxima!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!--Lista de Respostas-->
+     <section>
+            <button id="abrir-gabarito">Clique aqui para ver a resposta do Quiz</button>
+            <div class="details-content">
+                <ul>
+                    <li>P1: HTML</li>
+                    <li>P2: Domínio</li>
+                    <li>P3: MacD0nald$ (Apenas de exemplo, uma senha forte precisa conter pelo menos, uma letra minúscula, uma letra maiúscula e um caracter especial, além de precisar conter pelo menos 8 caracteres.)</li>
+                    <li>P4: 1991</li>
+                    <li>P5: Javascript, Ruby, C#</li>
+                    <li>P6: (Qualquer arquivo .HTML é válido)</li>
+                    <li>P7: type</li>
+                    <li>P8: Logotipo do HTML5</li>
+                </ul>
+            </div>
+            </section>
+                    </div> 
+            </details>
+        </section>
+        <!--Formulário de Feedback-->
+        <section id="feedback">
+            <h2>Nos dê seu feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome"><br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email"><br>
+                <label for="comentairos">Comentários: </label><br>
+                <textarea name="comentarios" id="comentario" placeholder="Escreva sua RESENHA! ^^" rows="4" cols="50"></textarea>
+                <button type="button" onclick="alertar(event)">Enviar resenha!</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+        <footer>
+            
+        <p>Desenvolvido por <a href="https://github.com/GustavoAvilaB" rel="external"
+                target="_blank">GustavoA.Bandeira</a>!</p>
+        <p>&copy; 2025 Quiz para programadores. Todos os direitos reservados.</p>
+        <p>Para conhecer outros quizzes <a href="https://google.com" target="_blank" rel="external">Clique aqui</a></p>
+    </footer>
+
+    <script>
+        function alertar(event){
+            event.preventDefault(); // Evita o envio do formulário
+            var nome = document.getElementById("nome").value;
+            var email = document.getElementById("email").value;
+            var comentario = document.getElementById("comentario").value;
+            window.alert("Obrigado pelo seu comentário, " + nome +"!\nIremos responder em breve no email: " + email + ".\n\n Seu comentário: \n"  + comentario);
+        }
+
+        document.getElementById('abrir-gabarito').addEventListener('click', function() {
+    const content = document.querySelector('.details-content');
+    content.classList.toggle('show');
+});
+    </script>
+</body>
+
+</html>
