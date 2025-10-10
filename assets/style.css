@@ -177,7 +177,7 @@ section > .details-content{
     max-height: 0; 
     overflow: hidden;
 }
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
         section > .details-content {
             max-width: 90vw;
             width: 95vw;
@@ -327,18 +327,34 @@ footer{
 }
 
 @media (max-width: 600px) {
-  main, .container {
-    min-width: unset;
-    max-width: 100vw;
-    margin: 0 2vw;
-    padding: 10px 0;
-    box-sizing: border-box;
-  }
-  section, fieldset {
-    min-width: unset;
-    max-width: 100vw;
-    margin: 0 2vw;
-    padding: 10px;
-    box-sizing: border-box;
-  }
+    main, section {
+        min-width: unset;
+        max-width: 100vw;
+        width: 96vw;
+        margin: 0px;
+        padding: 10px 0;
+        box-sizing: border-box;
+        border-radius: 0;
+        border-width: 1px;
+        font-size: 1.1rem;
+    }
+    section, fieldset {
+        min-width: unset;
+        max-width: 96vw;
+        width: 96vw;
+        margin: 0px;
+        box-sizing: border-box;
+        border-radius: 0;
+        font-size: 1rem;
+    }
+    img {
+        width: 8rem;
+        max-width: 90vw;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1rem;
+    }
 }
