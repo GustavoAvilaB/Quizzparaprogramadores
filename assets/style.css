@@ -331,8 +331,8 @@ header p{
         box-sizing: border-box;
     }
     main, section {
-        min-width: 200px;
-        max-width: 530px;
+        min-width: 100%;
+        max-width: 700px;
         height: auto;
         margin: 0px;
         padding: 10px 0;
