@@ -10,31 +10,10 @@
     box-sizing: border-box;
     font-family: "Cabin", sans-serif;
 }
-header{
-    padding: 2rem;
-    background-color: #331F19;
-    text-align: center;
-    line-height: 2.4rem;
-}
-header h1{
-    color: #798252;
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    font-family: "Cinzel Decorative", "Cabin", serif;
 
-
-}
-header p{
-    color: #F4F0EA;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
 body{
     background-color: #F4F0EA;
     color: #798252;
-    background-image: url();
-    font-weight: 700px;
 }
 
 main{
@@ -47,8 +26,9 @@ main{
     align-items: center;
     gap: 2rem;
     margin: auto;
-    min-width: 50vw;
-    max-width: 80vw;
+    min-width: 320px;
+    max-width: 1200px;
+    height: auto;
     border: 2px solid #331F19;
     border-radius: 0px 0px 20px 20px;
     background-color: #E6E2D3;
@@ -60,15 +40,15 @@ section{
     flex-direction: column;
     gap: 1rem;
     position: relative;
-    min-width: 40vw;
-    max-width: 60vw;
+    min-width: 320px;
+    max-width: 900px;
     margin: auto;
     height: auto;
 }
 
 h2{
     color: #331F19;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-family: "Nova Mono", "Cabin", monospace;
 }
 
@@ -166,7 +146,7 @@ section > .details-content{
     box-shadow: 5px 5px 5px #B8B2A7;
     background-color: #E6E2D3;
     position: absolute;
-    width: 25vw;
+    width: 400px;
     opacity: 0;
     transition: max-height 0.6s ease, opacity 0.6s ease;
     top: 102%;
@@ -177,17 +157,7 @@ section > .details-content{
     max-height: 0; 
     overflow: hidden;
 }
-    @media (max-width: 700px) {
-        section > .details-content {
-            max-width: 90vw;
-            width: 95vw;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 10px;
-            font-size: 0.95rem;
-            box-sizing: border-box;
-        }
-    }
+
 section button{
     padding: 1rem;
     background-color: #CCD595;
@@ -325,36 +295,92 @@ footer{
     color: #0059ff;
     text-decoration: underline;
 }
+@media (min-width: 501px) {
+header{
+    padding: 2rem;
+    background-color: #331F19;
+    text-align: center;
+    line-height: 2.4rem;
+}
+header h1{
+    color: #798252;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 1em;
+    font-family: "Cinzel Decorative", "Cabin", serif;
+}
+header p{
+    color: #F4F0EA;
+    font-size: 17px;
+    font-weight: 400;
+}
+}
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
+    section > .details-content {
+        min-width: 200px;
+        max-width: 300px;
+        height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        font-size: 0.6em;
+        box-sizing: border-box;
+    }
     main, section {
-        min-width: unset;
-        max-width: 100vw;
-        width: 96vw;
+        min-width: 200px;
+        max-width: 530px;
+        height: auto;
         margin: 0px;
         padding: 10px 0;
         box-sizing: border-box;
         border-radius: 0;
         border-width: 1px;
-        font-size: 1.1rem;
     }
     section, fieldset {
-        min-width: unset;
-        max-width: 96vw;
-        width: 96vw;
+        min-width: 300px;
+        max-width: 350px;
+        height: auto;
         margin: 0px;
         box-sizing: border-box;
         border-radius: 0;
-        font-size: 1rem;
+        font-size: 0.76em;
     }
     img {
         width: 8rem;
         max-width: 90vw;
     }
-    header h1 {
-        font-size: 1.5rem;
+
+    header{
+        background-color: #331F19;
+        text-align: center;
     }
-    h2 {
-        font-size: 1rem;
+    header h1{
+        color: #798252;
+        width: 407px;
+        line-height: 30px;
+        height: 69px;
+        font-size: 1.2em;
+        font-weight: 600;
+        font-family: "Cinzel Decorative", "Cabin", serif;
+    }
+
+    header p{
+        color: #F4F0EA;
+        padding: 4px;
+        font-size: 0.6rem;
+        font-weight: 500;
+        height: auto;
+        margin: auto;
+        max-width: 86vw;
+    }
+
+    footer{
+        font-size: 0.4em;
+    }
+    footer p{
+               width: 138px;
+        height: auto;
     }
 }
